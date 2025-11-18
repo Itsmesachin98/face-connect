@@ -7,8 +7,6 @@ import {
     SheetClose,
 } from "@/components/ui/sheet";
 
-import { X } from "lucide-react";
-
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -52,7 +50,9 @@ const MobileNav = () => {
                         <SheetClose asChild>
                             <section className="flex h-full flex-col gap-6 pt-16 text-white">
                                 {sidebarLinks.map((link) => {
-                                    const isActive = pathname === link.route;
+                                    const isActive =
+                                        pathname === link.route ||
+                                        pathname.startsWith(`${link.route}/`);
 
                                     return (
                                         <SheetClose asChild key={link.route}>
