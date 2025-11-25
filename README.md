@@ -2,6 +2,8 @@
 
 A lightweight, real-time video calling web application built with **Next.js App Router**, **Clerk authentication**, **Stream Video SDK**, and **Shadcn UI**. This project demonstrates a modern, full-stack Next.js setup using server actions for secure token generation and a fully client-side meeting experience powered by Stream.
 
+🔗 **Live Site**: [face-connect-xi.vercel.app](https://face-connect-xi.vercel.app/)
+
 ## Overview
 
 **Face Connect** is a production-ready sample project showcasing:
